@@ -17,3 +17,10 @@ export HISTCONTROL=ignoreboth:erasedups
 shopt -s histappend
 # Turn off suspend/resume (ctrl-s, ctrl-q) so that ctrl-s can be used to search forward in command history
 stty -ixon
+
+
+# Allow for local machine-specific customizations
+if [[ -f .local_profile ]]
+then
+    source .local_profile
+fi
