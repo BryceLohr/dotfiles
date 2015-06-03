@@ -12,7 +12,7 @@ export HISTFILESIZE=10000
 # Ignore duplicate commands and those starting with spaces; clear dups from history
 export HISTCONTROL=ignoreboth:erasedups
 # Flush command history to disk each time prompt is displayed
-export PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
+# export PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
 # Append to history file instead of overwriting
 shopt -s histappend
 # Turn off suspend/resume (ctrl-s, ctrl-q) so that ctrl-s can be used to search forward in command history
