@@ -20,7 +20,7 @@ stty -ixon
 
 
 # Allow for local machine-specific customizations
-if [[ -f .local_profile ]]
+if [[ -f $HOME/.local_profile ]]
 then
-    source .local_profile
+    source $HOME/.local_profile
 fi
