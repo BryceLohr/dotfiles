@@ -15,3 +15,9 @@ if [ -f "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" ]
 then
     ln -s -f "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" $HOME/bin/subl
 fi
+
+# Make it so the keys actually repeat properly when held down on OS X
+if [ "Darwin" = $(uname -s) ]
+then
+    defaults write -g ApplePressAndHoldEnabled -bool false
+fi
