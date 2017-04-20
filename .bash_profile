@@ -1,9 +1,6 @@
 alias ll="ls -la"
 
-yellow="\e[33m"
-none="\e[0m"
-
-export PS1="$yellow\\W$ $none"
+export PS1="\[\033[33m\]\\W\$\[\033[0m\] "
 export EDTIROR="subl -w"
 export PATH=$HOME/bin:$PATH
 
