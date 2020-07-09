@@ -18,6 +18,10 @@ shopt -s histappend
 # Turn off suspend/resume (ctrl-s, ctrl-q) so that ctrl-s can be used to search forward in command history
 stty -ixon
 
+if [[ -f /usr/local/etc/bash_completion.d/git-completion.bash ]]
+then
+    source /usr/local/etc/bash_completion.d/git-completion.bash
+fi
 
 # Allow for local machine-specific customizations
 if [[ -f $HOME/.local_profile ]]
