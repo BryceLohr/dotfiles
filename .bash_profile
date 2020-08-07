@@ -28,11 +28,14 @@ then
     source /usr/local/etc/bash_completion.d/git-completion.bash
 fi
 
-# Allow for local machine-specific customizations
-if [[ -f $HOME/.local_profile ]]
+# Enable iTerm2 shell integration if available
+if [[ -f "${HOME}/.iterm2_shell_integration.bash" ]]
 then
-    source $HOME/.local_profile
+    source "${HOME}/.iterm2_shell_integration.bash"
 fi
 
-# Enable iTerm2 shell integration if available
-test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
+# Allow for local machine-specific customizations
+if [[ -f "${HOME}/.local_profile" ]]
+then
+    source "${HOME}/.local_profile"
+fi
