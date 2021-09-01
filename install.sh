@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/zsh
 #
 # Set up dotfiles to home directory
 #
@@ -6,7 +6,7 @@
 set -e  # Exit on error
 set -u  # Error on read of unassigned variable
 
-cp .bash_profile $HOME/.bash_profile
+cp .zshrc $HOME/
 
 mkdir -p $HOME/bin
 
