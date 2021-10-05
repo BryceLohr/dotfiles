@@ -35,6 +35,7 @@ HISTSIZE=2000
 alias ll='ls -la'
 alias isodate='date "+%FT%T%z"'
 alias utcdate='TZ=UTC date "+%FT%T%z"'
+alias unixtime="date +'%s'"
 alias synctime='sudo ntpdate -vu time.apple.com'
 
 
